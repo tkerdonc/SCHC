@@ -31,7 +31,6 @@ def test___init__with_value():
 #    buf = BitBuffer.BitBuffer(b'01010000')
 #    byte = 0x1
 #    buf.add_byte(byte)
-#    print buf._buf
 #    assert (False)
 
 #def test_add_bytes():

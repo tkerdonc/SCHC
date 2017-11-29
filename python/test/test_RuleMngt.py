@@ -18,7 +18,6 @@ def test_MO_equal():
 def test_MO_matchmapping_list():
     TV_0 = [0, 1, 2, 3]
     FV_0 = 2
-    print type(TV_0)
     assert (RuleMngt.MO_matchmapping(TV_0, FV_0, 0))
 
     TV_1 = ["0", "1", "2", "3"]
@@ -51,10 +50,10 @@ def test_MO_MSB():
 def test___init__():
     mgr = RuleMngt.RuleManager()
     assert (len(mgr.context) == 0)
-    assert( "ignore" in self.MatchingOperators)
-    assert( "equal" in self.MatchingOperators)
-    assert( "match-mapping" in self.MatchingOperators)
-    assert( "MSB" in self.MatchingOperators)
+    assert( "ignore" in mgr.MatchingOperators)
+    assert( "equal" in mgr.MatchingOperators)
+    assert( "match-mapping" in mgr.MatchingOperators)
+    assert( "MSB" in mgr.MatchingOperators)
 
 def test_addRule ():
     assert(True)
